@@ -44,7 +44,6 @@ class SimpleChatBot:
             for j in range(1, n + 1):
                 # 조건 표현식. 행과 열을 비교해서 비교부분이 동일하면 0
                 cost = 0 if str_1[i - 1] == str_2[j - 1] else 1
-
                 # 거리 구하기. 삽입, 삭제, 변경 중 가장 작은 값을 불러온다.
                 distance[i][j] = min(distance[i - 1][j] + 1,           # 문자 제거: 위쪽에서 +1
                                      # 문자 삽입: 왼쪽에서 +1
